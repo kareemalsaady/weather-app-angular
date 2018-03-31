@@ -11,15 +11,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 //Import Modules
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
+var http_1 = require('@angular/http');
 //Import Components
 var app_component_1 = require("./app.component");
+var weather_component_1 = require("./weather-widget/component/weather.component");
+var speed_unit_pipe_1 = require('./weather-widget/pipe/speed-unit.pipe');
+var temperature_unit_pipe_1 = require('./weather-widget/pipe/temperature-unit.pipe');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [app_component_1.AppComponent],
+            imports: [platform_browser_1.BrowserModule, http_1.JsonpModule, http_1.HttpModule],
+            declarations: [
+                app_component_1.AppComponent,
+                weather_component_1.WeatherComponent,
+                speed_unit_pipe_1.SpeedUnitPipe,
+                temperature_unit_pipe_1.TemperatureUnitPipe
+            ],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

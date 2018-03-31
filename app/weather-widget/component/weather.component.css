@@ -1,0 +1,65 @@
+.card{
+  box-shadow: 0 1px 2px rgba(0,0,0,0.24);
+  transition: background-color 1s ease;
+  cursor: pointer;
+}
+
+.card,
+.card-header,
+.card-footer{
+  border: none;
+  border-radius: 0;
+}
+
+.card-header,
+.card-footer{
+  padding: 1rem 0.5rem;
+  background-color: transparent;
+}
+
+#location-wrapper{
+  font-size: 1.1rem;
+}
+
+.card-block{
+  padding: 1.5rem 0;
+}
+
+#indicator{
+  height: 165px;
+  position: relative;
+}
+
+
+canvas{
+  max-width: 250px;
+  margin-bottom: 1rem;
+}
+
+.card-block,
+.card-footer{
+  text-align: center;
+}
+
+.card-footer{
+    padding-bottom: 0.5rem;
+}
+
+#detail-row{
+  font-size: 0.8rem;
+}
+
+#helper-row{
+  padding-top: 0.5rem;
+}
+
+p{
+  margin: .2rem;
+}
+
+p:not(.unit-label){
+  text-transform: uppercase;
+}
+#location-icon{
+  margin-right: 5px;
+}
